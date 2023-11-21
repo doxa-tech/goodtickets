@@ -1,24 +1,17 @@
-# README
+# Goodtickets
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+To setup the development environment, run the (idempotent) command:
+```
+bin/setup
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run the server:
+```
+rails s
+```
+Additionaly, run the server for Javascript development:
+```
+bin/shakapacker-dev-server
+```

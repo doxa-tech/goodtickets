@@ -10,16 +10,10 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 gem "propshaft"
 
 # Use postgresql as the database for Active Record
-gem "pg", "~> 1.1"
+gem "pg", "= 1.4.6"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
-
-# Javascript import maps
-gem "importmap-rails", "~> 1.1"
-
-# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails"
 
 # Bundle and process SASS
 gem "dartsass-rails", "~> 0.4.1"
@@ -57,3 +51,7 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
+
+gem "react-rails", "~> 3.1"
+
+gem "shakapacker", "~> 7.1"
