@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "private": "true",
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.5.0",
+    "rollup-plugin-svelte": "^7.1.6"
+  },
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs rollup.config.js"
+  },
+  "devDependencies": {
+    "svelte": "^4.2.7"
+  }
+}

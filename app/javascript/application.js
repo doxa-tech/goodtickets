@@ -1,1 +1,5 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
+import App from './hello.svelte';
+
+const app = new App({
+  target: document.body,
+});
