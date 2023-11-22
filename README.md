@@ -1,24 +1,20 @@
-# README
+# Goodtickets
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Goodtickets is an open-source ticketing plateform.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+The project requires:
+- `ruby` (> 3)
+- `node.js`  (> 18)
+- `yarn` ([install](https://yarnpkg.com/getting-started/install))
 
-* System dependencies
+To setup the project, run the (idempotent) command:
+```
+bin/setup
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run the development server, run:
+```
+bin/dev
+```
