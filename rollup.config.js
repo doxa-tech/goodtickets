@@ -1,4 +1,5 @@
 import resolve from "@rollup/plugin-node-resolve"
+import dynamicImportVars from '@rollup/plugin-dynamic-import-vars';
 import svelte from 'rollup-plugin-svelte';
 
 export default {
@@ -12,8 +13,9 @@ export default {
   plugins: [
     svelte({
       // Tell the svelte plugin where our svelte files are located
-      include: 'app/javascript/*.svelte',
+      include: 'app/javascript/components/**/*.svelte',
     }),
+    dynamicImportVars({}),
     // Tell any third-party plugins that we're building for the browser
     resolve({ browser: true }),
   ],
