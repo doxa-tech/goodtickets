@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "orders#new"
+
+  get "orders/get_form", to: "orders#get_form"
+  get "orders/add_item", to: "orders#add_item"
+
 end

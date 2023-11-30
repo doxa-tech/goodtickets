@@ -1,16 +1,16 @@
 {
   "name": "app",
   "private": "true",
-  "dependencies": {
-    "@rollup/plugin-dynamic-import-vars": "^2.1.0",
-    "@rollup/plugin-node-resolve": "^15.2.3",
+  "devDependencies": {
     "rollup": "^4.5.0",
-    "rollup-plugin-svelte": "^7.1.6"
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-svelte": "^7.1.6",
+    "sass": "^1.69.5",
+    "svelte": "^4.2.7"
   },
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs rollup.config.js"
-  },
-  "devDependencies": {
-    "svelte": "^4.2.7"
+    "build": "rollup -c --bundleConfigAsCjs rollup.config.js",
+    "build:css": "sass ./app/assets/stylesheets/application.sass.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
   }
 }
