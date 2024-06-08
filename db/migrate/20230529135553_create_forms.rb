@@ -3,6 +3,7 @@ class CreateForms < ActiveRecord::Migration[7.0]
     create_table :forms do |t|
       t.jsonb :fields
 
+      t.belongs_to :tenant
       t.timestamps
     end
   end

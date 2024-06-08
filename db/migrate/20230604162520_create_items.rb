@@ -11,7 +11,7 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.integer :limit
   
       t.belongs_to :items_bundle
-
+      t.belongs_to :tenant
       t.timestamps
     end
   end

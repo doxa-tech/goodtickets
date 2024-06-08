@@ -5,13 +5,13 @@ class CreatePayments < ActiveRecord::Migration[7.0]
       t.integer :refund_amount
       t.integer :method
       t.integer :payment_type
-      t.datetime  :time
+      t.datetime :time
       t.integer :state
       t.integer :refund_state
       t.bigint :payment_id
 
       t.belongs_to :order
-
+      t.belongs_to :tenant
       t.timestamps
     end
   end

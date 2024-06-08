@@ -9,6 +9,7 @@ class CreateDiscounts < ActiveRecord::Migration[7.0]
       t.integer :reduction
       t.integer :number
 
+      t.belongs_to :tenant
       t.timestamps
     end
   end
