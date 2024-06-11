@@ -1,0 +1,19 @@
+# docker compose for testing
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+  web:
+    build: .
+    environment:
+      RAILS_MASTER_KEY: 7390395e8c393941a9b4c7e122d0954d
+      POSTGRES_HOST: localhost
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - 3000:80
+    depends_on:
+      - db
